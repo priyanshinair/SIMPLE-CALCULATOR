@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+
+
+
+
+    <script>
+        function dis(val)
+        {
+            document.getElementById('result').value+=val;
+        }
+
+        function clr()
+        {
+            document.getElementById('result').value=" ";
+        }
+
+        function solve(){
+
+            let x=document.getElementById('result').value;
+            let y=eval(x);
+            document.getElementById('result').value=y;
+        }
+    </script>
+
+
+
+
+
+
+
+<style>
+
+
+
+    .table{
+        border:9px solid blue;
+        background-color: pink;
+        height:500px;
+        width:500px;
+
+    }
+
+
+
+    button{
+        width:50px;
+        height:50px;
+        background-color:yellow;
+        border:2px solid black;
+        font-weight:bold;
+        font-stretch: extra-expanded;
+    }
+
+
+
+
+    input{
+        width:390px;
+        height:40px;
+        border:2px solid black;
+        background-color:rgb(203, 211, 205);
+        font-weight: bolder;
+        font-stretch: extra-condensed;
+    }
+
+
+    h1{
+        color:blue;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+
+
+</style>
+
+
+</head>
+<body>
+    <h1><center><u>CALCULATOR</u></center></h1><br>
+
+    <div class="table-responsive">
+    <center>
+    <table class="table">
+        
+        <tr>
+
+
+            <td colspan=3><input type="text" id="result"></td>
+            <td><button type="button" value="C" onclick="clr()"> C</button></td>
+        </tr>
+
+
+        <tr>
+
+
+            <td><button type="button" value="1" onclick="dis('1')">1</button></td>
+            <td><button type="button" value="2" onclick="dis('2')">2</button></td>
+            <td><button type="button" value="3"  onclick="dis('3')">3</button></td>
+            <td><button type="button" value="/" onclick="dis('/')">/</button></td>
+        </tr>
+
+
+        <tr>
+            <td><button type="button" value="4" onclick="dis('4')">4</button></td>
+            <td><button type="button" value="5" onclick="dis('5')">5</button></td>
+            <td><button type="button" value="6" onclick="dis('6')">6</button></td>
+            <td><button type="button" value="-" onclick="dis('-')">-</button></td>
+        </tr>
+
+
+
+        <tr>
+            <td><button type="button" value="7" onclick="dis('7')">7</button></td>
+            <td><button type="button" value="8" onclick="dis('8')">8</button></td>
+            <td><button type="button" value="9" onclick="dis('9')">9</button></td>
+            <td><button type="button" value="+" onclick="dis('+')">+</button></td>
+        </tr>
+
+
+
+        <tr>
+            <td><button type="button" value="." onclick="dis('.')">.</button></td>
+            <td><button type="button" value="0" onclick="dis('0')">0</button></td>
+            <td><button type="button" value="=" onclick="solve()">=</button></td>
+            <td><button type="button" value="*" onclick="dis('*')">*</button></td>
+        </tr>
+
+    </table>
+    </center>
+</div>
+
+
+
+
+</body>
+</html>
